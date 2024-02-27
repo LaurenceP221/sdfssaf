@@ -8,75 +8,74 @@
 </head>
 <body>
 
-    <h1 style="text-align: center;">Steer Hub Visitation Form</h1>
+  <h1 style="text-align: center;">Steer Hub Visitation Form</h1>
 
-    <form action="process-form.php" method="post">
+  <form>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <br>
+    <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+    <br>
       
-        <fieldset>
-            <legend>Sex</legend>
+    <fieldset>
+      <legend>Sex</legend>
 
-            <label>
-                <input type="radio" name="sex" value="1" checked>
-                Male
-            </label>
+        <label>
+          <input type="radio" name="sex" value="1" checked>
+            Male
+        </label>
 
-            <br>
-            <label>
-                <input type="radio" name="sex" value="2">
-                Female
-            </label>
+        <br>
+        <label>
+          <input type="radio" name="sex" value="2">
+            Female
+        </label>
 
         </fieldset>
         <br>
       
         <label for="name">Position/Designation</label>
-        <input type="text" id="desig" name="desig">
+          <input type="text" id="desig" name="desig">
         <br>
 
         <label for="name">Affiliation</label>
-        <input type="text" id="affil" name="affil">
+          <input type="text" id="affil" name="affil">
         <br>
 
         <label for="name">Mobile Number</label>
-        <input type="text" id="mobileNum" name="mobileNum">
+          <input type="text" id="mobileNum" name="mobileNum">
         <br>
 
         <label for="name">Email Address</label>
-        <input type="text" id="emailAdd" name="emailAdd">
+          <input type="text" id="emailAdd" name="emailAdd">
         <br>
 
         <label for="image">Upload Signature</label>
-        <input type="file" id="image" name="image">
+          <input type="file" id="image" name="image">
         <br>
 
         <label for="visting">I am visting:</label>
         <select id="visting" name="visting">
-            <option value="1">Digital Transformation Center</option>
-            <option value="2">GIS Applications Center</option>
-            <option value="3">Electronic Systems Research Center</option>
-            <option value="4">Center for Technopreneurship and Innovation</option>
-            <option value="5">Likha FABLAB</option>
-            <option value="6">Materials Testing and Calibration Center</option>
+          <option value="1">Digital Transformation Center</option>
+          <option value="2">GIS Applications Center</option>
+          <option value="3">Electronic Systems Research Center</option>
+          <option value="4">Center for Technopreneurship and Innovation</option>
+          <option value="5">Likha FABLAB</option>
+          <option value="6">Materials Testing and Calibration Center</option>
         </select>
+
         <br>
-
-        >
-
-        <label>
-            <input type="checkbox" name="terms">
-            I agree to the terms and conditions
-        </label>
-
-      
         <br>
-
-        <button >Submit</button>
+        <div style="text-align: center;">
+          <button type="submit">Submit</button>
+        </div>
+        
 
     </form>
 
+    <div>
+      {% for data in visitor %}
+        
+      {% endfor %}
+    </div>
 </body>
 </html>
