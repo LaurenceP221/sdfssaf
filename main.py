@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-from database import load_data_from_db
+from flask import Flask, render_template #type: ignore
+from database import load_data_from_db #type: ignore
 
 app = Flask(__name__)
 
